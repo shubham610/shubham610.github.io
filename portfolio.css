@@ -1,42 +1,58 @@
-*{
-	padding: 0;
-	margin: 0;
-	font-family: 'Open Sans', sans-serif;
-}
-.back{
-	width: 100%;
-	height: 100%;
-	background-image: url('port.jpg');
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;	
-	color:lawngreen;
-}
-.image{
-	width:350px;
-	height:390px;
-	background-color: rgba(10,13,90,0.5);
-	border-radius: 10%;
-}
-img{
-height:220px;width:200px;
-border-radius:50%;
-margin-top:10px;
-}
-a:link{color:lawngreen;
-text-decoration:none;
-}
-a:visited{color:lawngreen;
-text-decoration:none;
-}
-a:hover{color:lawngreen;
-text-decoration:none;
-}
-a:active{color:lawngreen;
-text-decoration:none;
-}
-h2{margin-bottom:7px;}
-h3{margin-bottom:7px;}
-p{margin-bottom:10px;}
+#wrapper {
+    padding-left: 250px;
+    transition: all 0.4s ease 0s;
+  }
+  
+  #sidebar-wrapper {
+    margin-left: -250px;
+    left: 250px;
+    width: 250px;
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+  } 
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line height: 4rem;
+    font-size: 1.5em;
+    padding-top: 50px;
+    
+  }
+  
+  .sidebar-nav li {
+    line-height: 40px;
+    text-indent: 20px;
+  }
+  
+  .sidebar-nav li a {
+    color:#EBEBEB;
+    display: block;
+    text-decoration: none;
+    padding-left: 60px;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 200;
+  }
+  .sidebar-nav li a:hover{
+      color: white;
+  }
+ .contact{
+    padding-left: 50px;
+ }
+ .about{
+     padding-left: 60px;
+ }
+  
+  
